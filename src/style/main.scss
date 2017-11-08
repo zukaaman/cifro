@@ -3,6 +3,8 @@
 */
 @import "partials/normalize";
 
+@import "partials/variables";
+
 @import "partials/body";
 
 @import "partials/header";
@@ -11,4 +13,12 @@
 
 @import "partials/index-features";
 
+@import "partials/index-actions";
+
+@import "partials/index-description";
+
+@import "partials/index-stats";
+
 @import "partials/aside";
+
+@import "partials/footer";

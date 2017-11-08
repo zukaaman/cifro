@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Компьютерный сервис центр «ЦИФРО»</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/main.min.css" rel="stylesheet">
   </head>
   <body>
@@ -23,12 +22,14 @@
     </header>
 
     <aside class="sidebar">
-      <img src="img/logo.png" width="229" height="79" alt="logo">
+      <a href="index.html">
+        <img src="img/logo.png" width="229" height="79" alt="logo">
+      </a>
       <h2 class="sidebar__title">Компьютерный<br> сервис-центр</h2>
       <button class="sidebar__phone">Заказать звонок</button>
       <button class="sidebar__call">Вызвать мастера</button>
       <button class="sidebar__status">Узнать статус ремонта</button>
-      <a class="sidebar__vk" href="#"><span class="visually-hidden">вконтакте</span></a>
+      <a class="sidebar__vk" href="https://vk.com/cifro_vtk"><span class="visually-hidden">вконтакте</span></a>
     </aside>
 
     <main>
@@ -99,99 +100,116 @@
               </div>
             </li>
           </ul>
+
         </div>
       </section>
 
       <section class="actions">
-        <h2 class="visually-hidden">акции</h2>
 
-        <p>Акция действует с 1.10.2017 года по 31.10.2017 года</p>
-        <p>весь октябрь</p>
-        <p>скидка на ремонт</p>
-        <p>бытовой техники</p>
-        <p>-20%</p>
+          <h2 class="visually-hidden">акции</h2>
+          <p class="actions__title">Акция действует с 1.10.2017 года по 31.10.2017 года</p>
 
-        <button>налево</button>
-        <button>направо</button>
+          <div class="actions__slider">
+            <div class="container">
+              <button class="actions__slider-left"><span class="visually-hidden">налево</span></button>
+              <div class="actions__img">
+                <img src="img/actions-img.png" width="400" height="251" alt="">
+              </div>
+              <div class="actions__description">
+                <p>весь октябрь</p>
+                <p>скидка на ремонт</p>
+                <p>бытовой техники</p>
+                <p>-20%</p>
+              </div>
+              <button class="actions__slider-right"><span class="visually-hidden">направо</span></button>
+            </div>
+          </div>
 
-        <a href="#">Все акции</a>
-
+          <div class="actions__link">
+            <a href="#">Все акции</a>
+          </div>
       </section>
 
       <section class="description">
-        <h2 class="visually-hidden">описание сервиса</h2>
-        <h3>Сервис Центр “Цифро”</h3>
-        <p>СЦ "Цифро" профессиональный сервис в г.Воткинск. Мы занимаемся как мелкими ремонтами на дому у клиента, так и сложным ремонтом любых поломок в нашем сервисном центре. Для физических и юридических лиц:  КВАЛИФИЦИРОВАННЫЙ РЕМОНТ Компьютеров, Ноутбуков, Планшетов, Сотовых. Диагностика. Настройка Интернет и сетей. Чистка от пыли и Вирусов. Помощь в приобретении техники. Консультация. Модернизация компьютеров. Сборка и продажа компьютеров и комплектующих. Продажа линцензионного ПО.</p>
-        <p>Так же для юридических лиц: Обслуживание и разработка 1С ПО. Продажа ПО. Абонентское обслуживание Вашей техники. Заправка картриджей. Выезд мастера на дом или офис. Без выходных. Бесплатная консультация. Гарантия.</p>
+        <div class="container">
+          <h2 class="visually-hidden">описание сервиса</h2>
+          <div class="description__wrapper">
+            <h3 class="description__title">Сервис Центр “Цифро”</h3>
+            <p>СЦ "Цифро" профессиональный сервис в г.Воткинск. Мы занимаемся как мелкими ремонтами на дому у клиента, так и сложным ремонтом любых поломок в нашем сервисном центре. Для физических и юридических лиц:  КВАЛИФИЦИРОВАННЫЙ РЕМОНТ Компьютеров, Ноутбуков, Планшетов, Сотовых. Диагностика. Настройка Интернет и сетей. Чистка от пыли и Вирусов. Помощь в приобретении техники. Консультация. Модернизация компьютеров. Сборка и продажа компьютеров и комплектующих. Продажа линцензионного ПО.</p>
+            <p>Также для юридических лиц: Обслуживание и разработка 1С ПО. Продажа ПО. Абонентское обслуживание Вашей техники. Заправка картриджей. Выезд мастера на дом или офис. Без выходных. Бесплатная консультация. Гарантия.</p>
+          </div>
+          <img src="img/master.jpg" alt="фото мастера">
+        </div>
       </section>
 
       <section class="stats">
         <h2 class="visually-hidden">статистика</h2>
-        <ul>
-          <li>
-            <h3>25 минут</h3>
-            <p>среднее время ремонта по заявкам</p>
-          </li>
-          <li>
-            <h3>1023 изделий</h3>
-            <p>отремонтировано сотрудниками</p>
-          </li>
-          <li>
-            <h3>1023 изделий</h3>
-            <p>отремонтировано сотрудниками</p>
-          </li>
-          <li>
-            <h3>35 клиентов</h3>
-            <p>в месяц обращаются в нашу компанию</p>
-          </li>
-        </ul>
+        <div class="container">
+          <ul class="stats__list">
+            <li class="stats__item">
+              <h3 class="stats__item-title">25<br> <span>минут</span></h3>
+              <p class="stats__item-description">среднее время ремонта по заявкам</p>
+            </li>
+            <li class="stats__item">
+              <h3 class="stats__item-title">1023<br> <span>изделий</span></h3>
+              <p class="stats__item-description">отремонтировано сотрудниками</p>
+            </li>
+            <li class="stats__item">
+              <h3 class="stats__item-title">1023<br> <span>изделий</span></h3>
+              <p class="stats__item-description">отремонтировано сотрудниками</p>
+            </li>
+            <li class="stats__item">
+              <h3 class="stats__item-title">35<br> <span>клиентов</span></h3>
+              <p class="stats__item-description">в месяц обращаются в нашу компанию</p>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <a href=""></a>
 
     </main>
 
-    <footer>
-      <ul>
-        <li>
-          <ul>
-            <li>Главная</li>
-            <li>О нас</li>
-            <li>Услуги</li>
-            <li>Акции</li>
-            <li>Вакансии</li>
-            <li>Контакты</li>
-          </ul>
-        </li>
-        <li>
-          <ul>
-            <li>РЕМОНТ</li>
-            <li>Компьютеров</li>
-            <li>Ноутбуков</li>
-            <li>Сотовых телефонов</li>
-            <li>Планшетов</li>
-            <li>Бытовой техники</li>
-          </ul>
-        </li>
-        <li>
-          <ul>
-            <li>МОДЕРНИЗАЦИЯ</li>
-            <li>Компьютеров</li>
-            <li>Ноутбуков</li>
-            <li>ПОСТАВКА</li>
-            <li>Комплектующих</li>
-          </ul>
-        </li>
-        <li>
-          <ul>
-            <li>Мы находимся: г.Воткинск, ул. 1-Мая, д. 83,
-    Магазин Торговый дом «Мужские товары»,
-    г.Воткинск, ул. Волгоградская, д. 22, ТЦ «Альфа», 2 этаж,
-    Время работы: пн-пт с 10:00 до 19:00, сб-вс с 10:00 до 16:00</li>
-            <li>ООО «Цифро», 2017. Все права защищены.</li>
-          </ul>
-        </li>
-      </ul>
+    <footer class="page-footer">
+      <div class="container">
+        <ul class="page-footer__list">
+          <li>
+            <ul class="page-footer__nav-list">
+              <li class="page-footer__item"><a href="index.html">Главная</a></li>
+              <li class="page-footer__item"><a href="about.html">О нас</a></li>
+              <li class="page-footer__item"><a href="services.html">Услуги</a></li>
+              <li class="page-footer__item"><a href="actions.html">Акции</a></li>
+              <li class="page-footer__item"><a href="careers.html">Вакансии</a></li>
+              <li class="page-footer__item"><a href="contacts.html">Контакты</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul class="page-footer__repair-list">
+              <li class="page-footer__item  page-footer__item--title"><a href="#">РЕМОНТ</a></li>
+              <li class="page-footer__item"><a href="#">Компьютеров</a></li>
+              <li class="page-footer__item"><a href="#">Ноутбуков</a></li>
+              <li class="page-footer__item"><a href="#">Сотовых телефонов</a></li>
+              <li class="page-footer__item"><a href="#">Планшетов</a></li>
+              <li class="page-footer__item"><a href="#">Бытовой техники</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul class="page-footer__third-list">
+              <li class="page-footer__item  page-footer__item--title"><a href="#">МОДЕРНИЗАЦИЯ</a></li>
+              <li class="page-footer__item"><a href="#">Компьютеров</a></li>
+              <li class="page-footer__item"><a href="#">Ноутбуков</a></li>
+              <li class="page-footer__item  page-footer__item--title"><a href="#">ПОСТАВКА</a></li>
+              <li class="page-footer__item"><a href="#">Комплектующих</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul class="page-footer__address-list">
+              <li class="page-footer__address-item">Мы находимся: г.Воткинск, ул. 1-Мая, д. 83, Магазин Торговый дом «Мужские товары», г.Воткинск, ул. Волгоградская, д. 22, ТЦ «Альфа», 2 этаж, Время работы: пн-пт с 10:00 до 19:00, сб-вс с 10:00 до 16:00</li>
+              <li class="page-footer__address-item">ООО «Цифро», 2017. Все права защищены.</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </footer>
 
   </body>

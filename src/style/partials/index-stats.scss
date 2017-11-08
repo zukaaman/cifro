@@ -1,0 +1,55 @@
+.stats {
+  padding: 70px 0 60px 60px;
+  background-color: #222222;
+  background-image: url("../img/index-stats-triangle.png");
+  background-repeat: no-repeat;
+  background-position: 320px 0;
+}
+
+.stats__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+  list-style: none;
+}
+
+.stats__item {
+  flex-basis: 25%;
+  margin-right: 70px;
+}
+
+.stats__item:last-child {
+  margin-right: 0;
+}
+
+.stats__item-title {
+  margin: 0;
+
+  color: #fefb07;
+  font-family: $font-roboto;
+  letter-spacing: -1.2px;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 26px;
+
+}
+
+.stats__item-title span {
+  color: #fefb07;
+  font-family: $font-roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.stats__item-description {
+  margin: 0;
+  padding-top: 20px;
+
+  color: #ffffff;
+  font-family: $font-roboto-thin;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+}

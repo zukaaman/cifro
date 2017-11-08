@@ -1,0 +1,92 @@
+.page-footer {
+  padding: 60px 0 50px 0;
+  background-color: #000000;
+}
+
+.page-footer__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+
+
+  list-style: none;
+}
+
+.page-footer__nav-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+// .page-footer__nav-item a {
+//   color: #999999;
+//   font-family: $font-roboto;
+//   font-size: 16px;
+//   font-weight: 400;
+//   line-height: 28px;
+// }
+
+.page-footer__repair-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+// .page-footer__repair-list a {
+//   color: #999999;
+//   font-family: $font-roboto;
+//   font-size: 16px;
+//   font-weight: 400;
+//   line-height: 28px;
+//   /* Text style for "Р, ЕМОНТ" */
+//   // color: #fefb07;
+//   /* Text style for "Планшетов" */
+//   // text-decoration: underline;
+// }
+
+
+
+.page-footer__third-list {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.page-footer__item a {
+color: #999999;
+font-family: $font-roboto;
+font-size: 16px;
+font-weight: 400;
+line-height: 28px;
+// /* Text style for "М, ОДЕРНИЗ" */
+// color: #fefb07;
+// /* Text style for "" */
+// color: #cccccc;
+}
+
+.page-footer__item--title a {
+  color: #fefb07;
+}
+
+.page-footer__address-list {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.page-footer__address-item {
+  color: #999999;
+  font-family: $font-roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.page-footer__list li:nth-child(4) {
+  flex-basis: 33%;
+}

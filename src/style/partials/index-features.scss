@@ -1,6 +1,6 @@
 .features {
   padding-top: 90px;
-  padding-bottom: 80px;
+  // padding-bottom: 80px;
 }
 
 .features__list {
@@ -69,10 +69,10 @@
 .features__title {
   margin: 0;
 
+  font-family: "robotothin", sans-serif;
   color: #000000;
-  font-size: 16px;
   font-size: 20px;
-  font-weight: 500;
+  // font-weight: 500;
   letter-spacing: 0.8px;
   line-height: 28px;
 }
@@ -80,6 +80,7 @@
 .features__list p {
   margin: 0;
 
+  font-family: "robotothin", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 100;

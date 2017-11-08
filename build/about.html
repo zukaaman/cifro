@@ -2,7 +2,9 @@
 <html>
   <head lang="ru">
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>О НАС</title>
+    <link href="css/main.min.css" rel="stylesheet">
   </head>
   <body>
 
@@ -20,12 +22,14 @@
     </header>
 
     <aside class="sidebar">
-      <img src="img/logo.png" width="229" height="79" alt="logo">
+      <a href="index.html">
+        <img src="img/logo.png" width="229" height="79" alt="logo">
+      </a>
       <h2 class="sidebar__title">Компьютерный<br> сервис-центр</h2>
       <button class="sidebar__phone">Заказать звонок</button>
       <button class="sidebar__call">Вызвать мастера</button>
       <button class="sidebar__status">Узнать статус ремонта</button>
-      <a class="sidebar__vk" href="#"><span class="visually-hidden">вконтакте</span></a>
+      <a class="sidebar__vk" href="https://vk.com/cifro_vtk"><span class="visually-hidden">вконтакте</span></a>
     </aside>
 
     <main>
@@ -48,7 +52,7 @@
         <p>Для физических и юридических лиц: КВАЛИФИЦИРОВАННЫЙ РЕМОНТ Компьютеров, Ноутбуков, Планшетов, Сотовых. Диагностика. Настройка Интернет и сетей. Чистка от пыли и Вирусов. Помощь в приобретении техники. Консультация. Модернизация компьютеров. Сборка и продажа компьютеров и комплектующих. Продажа линцензионного ПО.</p>
       </section>
 
-      <section class="stats">
+      <section class="about-stats">
         <h2 class="visually-hidden">статистика</h2>
         <ul>
           <li>
@@ -76,47 +80,46 @@
 
     </main>
 
-    <footer>
-      <ul>
-        <li>
-          <ul>
-            <li>Главная</li>
-            <li>О нас</li>
-            <li>Услуги</li>
-            <li>Акции</li>
-            <li>Вакансии</li>
-            <li>Контакты</li>
-          </ul>
-        </li>
-        <li>
-          <ul>
-            <li>РЕМОНТ</li>
-            <li>Компьютеров</li>
-            <li>Ноутбуков</li>
-            <li>Сотовых телефонов</li>
-            <li>Планшетов</li>
-            <li>Бытовой техники</li>
-          </ul>
-        </li>
-        <li>
-          <ul>
-            <li>МОДЕРНИЗАЦИЯ</li>
-            <li>Компьютеров</li>
-            <li>Ноутбуков</li>
-            <li>ПОСТАВКА</li>
-            <li>Комплектующих</li>
-          </ul>
-        </li>
-        <li>
-          <ul>
-            <li>Мы находимся: г.Воткинск, ул. 1-Мая, д. 83,
-    Магазин Торговый дом «Мужские товары»,
-    г.Воткинск, ул. Волгоградская, д. 22, ТЦ «Альфа», 2 этаж,
-    Время работы: пн-пт с 10:00 до 19:00, сб-вс с 10:00 до 16:00</li>
-            <li>ООО «Цифро», 2017. Все права защищены.</li>
-          </ul>
-        </li>
-      </ul>
+    <footer class="page-footer">
+      <div class="container">
+        <ul class="page-footer__list">
+          <li>
+            <ul class="page-footer__nav-list">
+              <li class="page-footer__item"><a href="index.html">Главная</a></li>
+              <li class="page-footer__item"><a href="about.html">О нас</a></li>
+              <li class="page-footer__item"><a href="services.html">Услуги</a></li>
+              <li class="page-footer__item"><a href="actions.html">Акции</a></li>
+              <li class="page-footer__item"><a href="careers.html">Вакансии</a></li>
+              <li class="page-footer__item"><a href="contacts.html">Контакты</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul class="page-footer__repair-list">
+              <li class="page-footer__item  page-footer__item--title"><a href="#">РЕМОНТ</a></li>
+              <li class="page-footer__item"><a href="#">Компьютеров</a></li>
+              <li class="page-footer__item"><a href="#">Ноутбуков</a></li>
+              <li class="page-footer__item"><a href="#">Сотовых телефонов</a></li>
+              <li class="page-footer__item"><a href="#">Планшетов</a></li>
+              <li class="page-footer__item"><a href="#">Бытовой техники</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul class="page-footer__third-list">
+              <li class="page-footer__item  page-footer__item--title"><a href="#">МОДЕРНИЗАЦИЯ</a></li>
+              <li class="page-footer__item"><a href="#">Компьютеров</a></li>
+              <li class="page-footer__item"><a href="#">Ноутбуков</a></li>
+              <li class="page-footer__item  page-footer__item--title"><a href="#">ПОСТАВКА</a></li>
+              <li class="page-footer__item"><a href="#">Комплектующих</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul class="page-footer__address-list">
+              <li class="page-footer__address-item">Мы находимся: г.Воткинск, ул. 1-Мая, д. 83, Магазин Торговый дом «Мужские товары», г.Воткинск, ул. Волгоградская, д. 22, ТЦ «Альфа», 2 этаж, Время работы: пн-пт с 10:00 до 19:00, сб-вс с 10:00 до 16:00</li>
+              <li class="page-footer__address-item">ООО «Цифро», 2017. Все права защищены.</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </footer>
 
   </body>
