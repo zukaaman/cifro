@@ -1,0 +1,86 @@
+.features {
+  padding-top: 90px;
+  padding-bottom: 80px;
+}
+
+.features__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+  list-style: none;
+}
+
+.features__item {
+  // position: relative;
+  display: flex;
+  // flex-wrap: wrap;
+  flex-basis: 33%;
+  margin-right: 30px;
+}
+
+.features__item--repair::before {
+  content: "";
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+
+  display: block;
+  // flex-basis: 100px;
+  flex-grow: 1;
+  width: 100px;
+  height: 100px;
+
+  background-image: url("../img/tool.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.features__item--modernization::before {
+  content: "";
+
+  display: block;
+  // flex-basis: 100px;
+  width: 100px;
+  height: 100px;
+
+  background-image: url("../img/modern.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.features__item--sale::before {
+  content: "";
+
+  display: block;
+  width: 100px;
+  height: 100px;
+
+  background-image: url("../img/sim.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.features__item div {
+  margin-left: 30px;
+  flex-basis: 70%;
+}
+
+.features__title {
+  margin: 0;
+
+  color: #000000;
+  font-size: 16px;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  line-height: 28px;
+}
+
+.features__list p {
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 100;
+}

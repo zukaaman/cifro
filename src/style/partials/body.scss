@@ -1,13 +1,27 @@
 body {
   font-family: "Roboto", sans-serif;
+
+  box-sizing: border-box;
 }
 
 button {
+  padding: 0;
+
   border: none;
 
   font-family: "Roboto", sans-serif;
 
   background-color: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -29,4 +43,9 @@ input[type="checkbox"].visually-hidden {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
 }
