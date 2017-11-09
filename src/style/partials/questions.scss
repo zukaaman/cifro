@@ -1,0 +1,89 @@
+.questions {
+  padding-top: 60px;
+  padding-bottom: 50px;
+
+  text-align: center;
+
+  background-color: #222222;
+}
+
+.questions__title {
+  margin: 0;
+
+  font-family: $font-roboto;
+  color: #fefb07;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+
+  // /* Text style for "Закажите о" */
+  // color: #e6e7eb;
+  // font-weight: 400;
+  // line-height: 32px;
+  // /* Text style for "" */
+  // color: #999999;
+  // font-weight: 400;
+  // line-height: 32px;
+  // /* Text style for "или позвон" */
+  // font-weight: 400;
+  // line-height: 32px;
+}
+
+.questions__text {
+  margin: 0;
+
+  color: #666666;
+  font-family: $font-roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.questions__text span {
+
+  font-family: $font-roboto;
+  font-size: 16px;
+  font-weight: 400;
+
+  /* Text style for "Закажите о" */
+  color: #e6e7eb;
+  font-weight: 400;
+  line-height: 32px;
+
+  border-bottom: 2px dashed #e6e7eb;
+  // /* Text style for "" */
+  // color: #999999;
+  // font-weight: 400;
+  // line-height: 32px;
+
+}
+
+.questions__phone {
+  margin: 0;
+
+  color: #e6e7eb;
+  font-family: $font-roboto;
+  line-height: 44px;
+  /* Text style for "МТС - , ," */
+  color: #666666;
+  font-size: 16px;
+  font-weight: 400;
+  /* Text style for "8 (912) 87" */
+  // /* Text style for "." */
+  // color: #666666;
+  // font-family: "Roboto - Thin";
+  // font-size: 16px;
+  // font-weight: 400;
+}
+
+.questions__phone span {
+
+  color: #e6e7eb;
+  font-family: $font-roboto;
+  font-size: 20px;
+  line-height: 44px;
+
+  /* Text style for "8 (912) 87" */
+  font-weight: 500;
+
+}

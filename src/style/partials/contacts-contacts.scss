@@ -1,0 +1,110 @@
+.contacts {
+  // flex-basis: 60%;
+  width: 600px;
+  // padding-top: 50px;
+  // padding-bottom: 40px;
+  // padding-left: 60px;
+  padding: 50px 60px 40px 60px;
+}
+
+.contacts__title {
+  margin: 0;
+
+  color: #000000;
+  font-family: $font-roboto;
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: 2.4px;
+}
+
+.contacts__description {
+  position: relative;
+
+  margin: 0;
+  margin-top: 30px;
+  padding: 25px 80px 25px 30px;
+
+  color: #000000;
+  font-family: $font-roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+
+  background-color: #e6e7eb;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    width: 0;
+    height: 0;
+
+    border-top: 30px solid #e6e7eb;
+    border-right: 30px solid #ffffff;
+  }
+}
+
+.contacts__list {
+  margin: 0;
+  padding-top: 40px;
+
+  list-style: square;
+}
+
+.contacts__item {
+
+  color: #000000;
+  font-family: $font-roboto-thin;
+  font-size: 16px;
+
+  font-weight: 100;
+  line-height: 26px;
+}
+
+.contacts__item span {
+
+  color: #000000;
+  font-family: $font-roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+
+}
+
+.contacts__time,
+.contacts__phone {
+  margin: 0;
+  padding-top: 35px;
+
+  color: #000000;
+  font-family: $font-roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+
+}
+
+.contacts__time span,
+.contacts__phone span {
+
+  color: #000000;
+  font-size: 20px;
+  line-height: 30px;
+  /* Text style for "Наши конта" */
+  font-weight: 700;
+
+}
+
+.contacts__requisites {
+  margin: 0;
+  padding-top: 30px;
+
+  color: #000000;
+  font-family: $font-roboto-thin;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}

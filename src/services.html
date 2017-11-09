@@ -8,26 +8,34 @@
   </head>
   <body>
 
-    //= template/header.html
-
     //= template/sidebar.html
 
-    <main>
+    <div class="body__wrapper">
+      //= template/header.html
 
-      <section class="top">
-        <h1>УСЛУГИ</h1>
-        <p>Качественно. Быстро. Недорого.</p>
-      </section>
+      <main>
 
-      <section class="questions">
-        <h2>Остались вопросы?</h2>
-        <p>Закажите обратный звонок или позвоните нам по телефону. Мы с удовольствием ответим на все Ваши вопросы!</p>
-        <p>МТС - 8 (912) 879-44-40, Tele2 - 8 (951) 209-51-55.</p>
-      </section>
+        <section class="services-top">
+          <div class="container">
+            <h1 class="services-top__title">УСЛУГИ</h1>
+            <p class="services-top__text">Качественно. Быстро. Недорого.</p>
+          </div>
+        </section>
 
-    </main>
+        <section></section>
 
-    //= template/footer.html
+        <section class="questions">
+          <div class="container">
+            <h2 class="questions__title">Остались вопросы?</h2>
+            <p class="questions__text"><span>Закажите обратный звонок</span> или позвоните нам по телефону.<br> Мы с удовольствием ответим на все Ваши вопросы!</p>
+            <p class="questions__phone">МТС - <span>8 (912) 879-44-40</span>, Tele2 - <span>8 (951) 209-51-55</span>.</p>
+          </div>
+        </section
+
+      </main>
+
+      //= template/footer.html
+    </div>
 
   </body>
 </html>

@@ -1,0 +1,34 @@
+.careers-top {
+  padding-top: 120px;
+  padding-bottom: 200px;
+
+  background-image: url("../img/careers-top.png");
+  background-repeat: no-repeat;
+  background-position: -191px -120px;
+}
+
+.careers-top__title {
+  margin: 0;
+
+
+  font-family: $font-roboto;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 60px;
+  letter-spacing: 2.4px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.careers-top__text {
+  margin: 0;
+  padding-top: 20px;
+
+  color: #fefb07;
+  font-family: #font-roboto;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  line-height: 50px;
+  text-align: center;
+}
