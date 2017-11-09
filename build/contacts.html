@@ -5,18 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>КОНТАКТЫ</title>
     <link href="css/main.min.css" rel="stylesheet">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
   </head>
   <body>
 
     <aside class="sidebar">
-      <a href="index.html">
-        <img src="img/logo.png" width="229" height="79" alt="logo">
-      </a>
-      <h2 class="sidebar__title">Компьютерный<br> сервис-центр</h2>
-      <button class="sidebar__phone">Заказать звонок</button>
-      <button class="sidebar__call">Вызвать мастера</button>
-      <button class="sidebar__status">Узнать статус ремонта</button>
-      <a class="sidebar__vk" href="https://vk.com/cifro_vtk"><span class="visually-hidden">вконтакте</span></a>
+      <div class="sidebar__wrapper">
+        <a class="sidebar__logo" href="index.html">
+          <img src="img/logo.png" width="229" height="79" alt="logo">
+        </a>
+        <h2 class="sidebar__title">Компьютерный<br> сервис-центр</h2>
+        <div class="sidebar__recall">
+          <button class="sidebar__phone">Заказать звонок</button>
+          <button class="sidebar__call">Вызвать мастера</button>
+        </div>
+        <button class="sidebar__status">Узнать статус ремонта</button>
+        <a class="sidebar__vk" href="https://vk.com/cifro_vtk"><span class="visually-hidden">вконтакте</span></a>
+      </div>
     </aside>
 
     <div class="body__wrapper">
@@ -36,13 +41,17 @@
       <main>
 
         <div class="main-wrapper">
-          <section class="map">
+          <section class="map" id="map">
             <!-- map -->
+            <!-- <div class="map__map" ></div> -->
+
           </section>
 
           <section class="contacts">
             <h1 class="contacts__title">КОНТАКТЫ</h1>
-            <p class="contacts__description">СЦ "Цифро" профессиональный сервис в г.Воткинск. Мы занимаемся как мелкими ремонтами на дому у клиента, так и сложным ремонтом любых поломок в нашем сервисном центре.</p>
+            <div class="contacts__description">
+              <p>СЦ "Цифро" профессиональный сервис в г.Воткинск. Мы занимаемся как мелкими ремонтами на дому у клиента, так и сложным ремонтом любых поломок в нашем сервисном центре.</p>
+            </div>
             <ul class="contacts__list">
               <li class="contacts__item"><span>г.Воткинск, ул. 1-Мая д. 83,</span><br> Магазин Торговый дом "Мужские товары"</li>
               <li class="contacts__item"><span>г.Воткинск ул. Волгоградская д. 22,</span><br> ТЦ “Альфа”, 2-ой этаж</li>
@@ -105,6 +114,8 @@
         </div>
       </footer>
     </div>
+
+    <script src="js/main.min.js"></script>
 
   </body>
 </html>

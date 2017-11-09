@@ -1,0 +1,155 @@
+.careers {
+  padding: 70px 0;
+}
+
+.careers__wrapper {
+  position: relative;
+
+  padding: 50px 70px;
+
+  border: 1px solid #e6e7eb;
+}
+
+.careers__wrapper--closed {
+  height: 280px;
+
+  overflow: hidden;
+}
+
+.careers__title {
+  margin: 0;
+
+  color: #000000;
+  font-family: $font-roboto;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+
+}
+
+.careers__time {
+  margin: 0;
+
+  font-size: 16px;
+  color: #999999;
+  font-family: $font-roboto;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.careers__schedule {
+  margin: 0;
+
+  color: #000000;
+  font-family: $font-roboto-thin;
+  font-size: 16px;
+  font-weight: 400;
+
+
+}
+
+.careers__schedule span {
+
+
+  color: #000000;
+  font-size: 16px;
+  font-family: $font-roboto;
+  font-weight: 500;
+  line-height: 26px;
+
+}
+
+.careers__list-title {
+  margin: 0;
+  padding-top: 35px;
+
+  color: #000000;
+  font-size: 16px;
+
+  // Text style for "График:, Т"
+  font-family: $font-roboto;
+  font-weight: 500;
+  line-height: 26px;
+
+}
+
+.careers__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: square inside;
+}
+
+.careers__list li {
+
+color: #000000;
+font-family: $font-roboto-thin;
+font-size: 16px;
+line-height: 26px;
+font-weight: 100;
+}
+
+.careers__respond-button {
+  position: absolute;
+  top: 50px;
+  right: 70px;
+
+  padding: 20px 55px 20px 65px;
+
+  color: #000000;
+  font-family: $font-roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+
+  background-color: #fefb07;
+
+  // box-shadow: 0 0 10px black;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 0;
+    height: 0;
+
+    border-bottom: 25px solid #fefb07;
+    border-left: 25px solid #ffffff;
+
+
+  }
+}
+
+.careers__open {
+  padding: 25px 70px;
+  background-color: #e6e7eb;
+}
+
+.careers__open-button {
+  position: relative;
+
+  color: #000000;
+  font-family: $font-roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-decoration: underline;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    right: -53px;
+
+    width: 30px;
+    height: 30px;
+
+    background-image: url("../img/button-right.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    transform: rotate(90deg);
+  }
+}

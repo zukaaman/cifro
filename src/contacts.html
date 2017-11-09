@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>КОНТАКТЫ</title>
     <link href="css/main.min.css" rel="stylesheet">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
   </head>
   <body>
 
@@ -16,13 +17,17 @@
       <main>
 
         <div class="main-wrapper">
-          <section class="map">
+          <section class="map" id="map">
             <!-- map -->
+            <!-- <div class="map__map" ></div> -->
+
           </section>
 
           <section class="contacts">
             <h1 class="contacts__title">КОНТАКТЫ</h1>
-            <p class="contacts__description">СЦ "Цифро" профессиональный сервис в г.Воткинск. Мы занимаемся как мелкими ремонтами на дому у клиента, так и сложным ремонтом любых поломок в нашем сервисном центре.</p>
+            <div class="contacts__description">
+              <p>СЦ "Цифро" профессиональный сервис в г.Воткинск. Мы занимаемся как мелкими ремонтами на дому у клиента, так и сложным ремонтом любых поломок в нашем сервисном центре.</p>
+            </div>
             <ul class="contacts__list">
               <li class="contacts__item"><span>г.Воткинск, ул. 1-Мая д. 83,</span><br> Магазин Торговый дом "Мужские товары"</li>
               <li class="contacts__item"><span>г.Воткинск ул. Волгоградская д. 22,</span><br> ТЦ “Альфа”, 2-ой этаж</li>
@@ -45,6 +50,8 @@
 
       //= template/footer.html
     </div>
+
+    <script src="js/main.min.js"></script>
 
   </body>
 </html>

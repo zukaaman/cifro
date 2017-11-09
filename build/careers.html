@@ -9,14 +9,18 @@
   <body>
 
     <aside class="sidebar">
-      <a href="index.html">
-        <img src="img/logo.png" width="229" height="79" alt="logo">
-      </a>
-      <h2 class="sidebar__title">Компьютерный<br> сервис-центр</h2>
-      <button class="sidebar__phone">Заказать звонок</button>
-      <button class="sidebar__call">Вызвать мастера</button>
-      <button class="sidebar__status">Узнать статус ремонта</button>
-      <a class="sidebar__vk" href="https://vk.com/cifro_vtk"><span class="visually-hidden">вконтакте</span></a>
+      <div class="sidebar__wrapper">
+        <a class="sidebar__logo" href="index.html">
+          <img src="img/logo.png" width="229" height="79" alt="logo">
+        </a>
+        <h2 class="sidebar__title">Компьютерный<br> сервис-центр</h2>
+        <div class="sidebar__recall">
+          <button class="sidebar__phone">Заказать звонок</button>
+          <button class="sidebar__call">Вызвать мастера</button>
+        </div>
+        <button class="sidebar__status">Узнать статус ремонта</button>
+        <a class="sidebar__vk" href="https://vk.com/cifro_vtk"><span class="visually-hidden">вконтакте</span></a>
+      </div>
     </aside>
 
     <div class="body__wrapper">
@@ -41,46 +45,53 @@
         </section>
 
         <section class="careers">
-          <h2 class="visually-hidden">ВАКАНСИИ</h2>
-          <h3>Менеджер отдела реализации</h3>
-          <p>06.06.2017</p>
-          <p>График: полный рабочий день</p>
-          <p>Требования:</p>
-          <ul>
-            <li>высшее или средне-специальное образование (ветеринария/зоотехния);</li>
-            <li>уверенный пользователь ПК (знание программы 1С приветствуется);</li>
-            <li>умение работать в коллективе;</li>
-            <li>обучаемость;</li>
-            <li>грамотная речь и письмо;</li>
-            <li>оперативность в выполнении поставленных задач.</li>
-          </ul>
-          <p>Обязанности:</p>
-          <ul>
-            <li>обслуживание клиентской базы;</li>
-            <li>прием входящих/исходящих звонков;</li>
-            <li>консультирование клиентов по продукции;</li>
-            <li>сопровождение договоров;</li>
-            <li>контроль за выполнением плана реализации по направлению.</li>
-          </ul>
-          <p>Требования:</p>
-          <ul>
-            <li>высшее или средне-специальное образование (ветеринария/зоотехния);</li>
-            <li>уверенный пользователь ПК (знание программы 1С приветствуется);</li>
-            <li>умение работать в коллективе;</li>
-            <li>обучаемость;</li>
-            <li>грамотная речь и письмо;</li>
-            <li>оперативность в выполнении поставленных задач.</li>
-          </ul>
-          <p>Условия:</p>
-          <ul>
-            <li>5-ти дневная рабочая неделя;</li>
-            <li>полный рабочий день с 8.00 до 17.00;</li>
-            <li>соблюдение ТК;</li>
-            <li>обучение, тренинги за счет компании;</li>
-            <li>возможность карьерного роста.</li>
-          </ul>
-          <button>Откликнуться</button>
-          <button>Развернуть описание</button>
+          <div class="container">
+            <div class="careers__wrapper  careers__wrapper--closed">
+              <h2 class="visually-hidden">ВАКАНСИИ</h2>
+              <h3 class="careers__title">Менеджер отдела реализации</h3>
+              <p class="careers__time">06.06.2017</p>
+              <p class="careers__schedule"><span>График:</span> полный рабочий день</p>
+              <p class="careers__list-title">Требования:</p>
+              <ul class="careers__list">
+                <li>высшее или средне-специальное образование (ветеринария/зоотехния);</li>
+                <li>уверенный пользователь ПК (знание программы 1С приветствуется);</li>
+                <li>умение работать в коллективе;</li>
+                <li>обучаемость;</li>
+                <li>грамотная речь и письмо;</li>
+                <li>оперативность в выполнении поставленных задач.</li>
+              </ul>
+              <p class="careers__list-title">Обязанности:</p>
+              <ul class="careers__list">
+                <li>обслуживание клиентской базы;</li>
+                <li>прием входящих/исходящих звонков;</li>
+                <li>консультирование клиентов по продукции;</li>
+                <li>сопровождение договоров;</li>
+                <li>контроль за выполнением плана реализации по направлению.</li>
+              </ul>
+              <p class="careers__list-title">Требования:</p>
+              <ul class="careers__list">
+                <li>высшее или средне-специальное образование (ветеринария/зоотехния);</li>
+                <li>уверенный пользователь ПК (знание программы 1С приветствуется);</li>
+                <li>умение работать в коллективе;</li>
+                <li>обучаемость;</li>
+                <li>грамотная речь и письмо;</li>
+                <li>оперативность в выполнении поставленных задач.</li>
+              </ul>
+              <p class="careers__list-title">Условия:</p>
+              <ul class="careers__list">
+                <li>5-ти дневная рабочая неделя;</li>
+                <li>полный рабочий день с 8.00 до 17.00;</li>
+                <li>соблюдение ТК;</li>
+                <li>обучение, тренинги за счет компании;</li>
+                <li>возможность карьерного роста.</li>
+              </ul>
+              <button class="careers__respond-button">Откликнуться</button>
+            </div>
+              <div class="careers__open">
+                <button class="careers__open-button" type="button">Развернуть описание</button>
+              </div>
+            <!-- </div> -->
+          </div>
         </section>
 
         <section class="questions">
@@ -135,6 +146,8 @@
         </div>
       </footer>
     </div>
+
+    <script src="js/main.min.js"></script>
 
   </body>
 </html>
