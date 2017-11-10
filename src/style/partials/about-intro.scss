@@ -1,0 +1,90 @@
+.intro {
+  padding-bottom: 40px;
+}
+
+.intro__top {
+  display: flex;
+  padding-bottom: 40px;
+}
+
+.intro__top img {
+  margin-left: 160px;
+  margin-right: 50px;
+}
+
+.intro__top p {
+  position: relative;
+
+  margin: 0;
+  margin-top: 80px;
+
+  color: #000000;
+  font-family: $font-roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -52px;
+    left: 0;
+
+    width: 31px;
+    height: 32px;
+
+    background-image: url("../img/quotes.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+
+.intro__text {
+
+  color: #000000;
+  font-family: $font-roboto-thin;
+  font-size: 16px;
+  line-height: 26px;
+
+  font-weight: 100;
+
+}
+
+.intro__buttons-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
+
+.intro__button-phiz {
+  padding: 12px 23px;
+  margin-right: 40px;
+
+  color: #080607;
+  font-family: $font-roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+
+  border: 1px solid #080607;
+  border-bottom: none;
+}
+
+.intro__button-yur {
+
+  color: #080607;
+  font-family: #font-roboto;
+  font-size: 20px;
+  font-style: italic;
+  line-height: 36px;
+}
+
+.intro__text-bottom {
+
+  color: #000000;
+  font-family: $font-roboto-thin;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}

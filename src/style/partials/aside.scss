@@ -102,47 +102,97 @@
   background-position: 0 0;
 }
 
+.sidebar__status-wrapper {
+  margin-top: 50px;
+
+  overflow: hidden;
+}
+
 .sidebar__status {
   position: relative;
 
   display: block;
   padding: 18px 27px;
   // margin: 50px auto 0 auto;
-  margin-top: 50px;
+  // margin-top: 50px;
 
   font-weight: 400;
   font-size: 16px;
 
-  border: 2px solid #000000
+  border: 2px solid #000000;
 
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
+  // overflow: hidden;
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: -44px;
+    left: -79px;
 
-  //   width: 0;
-  //   height: 0;
+    width: 100px;
+    height: 29px;
 
-  //   border-top: 30px solid red;
-  //   border-left: 30px solid red;
-  // }
+    border: 2px solid #000000;
+    background-color: #fefb07;
+
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: -44px;
+    right: -79px;
+
+    width: 100px;
+    height: 29px;
+
+    border: 2px solid #000000;
+    background-color: #fefb07;
+
+    transform: rotate(45deg);
+  }
 }
 
-.sidebar__status::before {
-  content: "";
-  position: absolute;
-  top: -2px;
-  left: -2px;
+// .sidebar__status::before {
+//   content: "";
+//   position: absolute;
+//   z-index: 1;
+//   top: -44px;
+//   left: -79px;
 
-  width: 0;
-  height: 0;
+//   width: 100px;
+//   height: 29px;
 
-  border-top: 25px solid #fefb07;
-  border-right: 25px solid #fefb07;
+//   border: 2px solid #000000;
+//   background-color: #fefb07;
+
+//   transform: rotate(45deg);
+// }
+
+.sidebar__status-smile {
+  position: relative;
+
+  margin: 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -72px;
+    right: -125px;
+
+    width: 30px;
+    height: 30px;
+
+    background-image: url("../img/smile.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+  }
 }
 
-.sidebar__status::after {
+.sidebar__status span::after {
   content: "";
   position: absolute;
   top: -13px;

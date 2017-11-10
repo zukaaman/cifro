@@ -8,6 +8,7 @@
   margin: 0;
   padding: 0;
   display: flex;
+  justify-content: space-around;
 
   list-style: none;
 }
@@ -15,7 +16,7 @@
 .about-stats__item {
   position: relative;
 
-  flex-basis: 33%;
+  flex-basis: 20%;
   margin-right: 70px;
 }
 

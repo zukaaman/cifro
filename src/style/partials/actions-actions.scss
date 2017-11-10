@@ -3,6 +3,7 @@
 }
 
 .actions__title {
+  margin: 0;
 
   color: #999999;
   font-family: $font-roboto;
@@ -114,6 +115,8 @@
 }
 
 .actions__open {
+  position: relative;
+
   display: flex;
   justify-content: space-between;
 
@@ -169,7 +172,7 @@
   }
 }
 
-.actions__open p {
+.actions__share-button {
   position: relative;
 
   margin: 0;
@@ -195,18 +198,53 @@
     background-repeat: no-repeat;
     background-position: 0 0;
   }
+
+  // &:hover ~ .actions__share {
+  //   display: block;
+  // }
 }
 
 .actions__share {
+  position: absolute;
+  top: 73px;
+  right: 129px;
+
+  display: none;
+  // width: 310px;
+  // height: 133px;
+  padding: 20px 30px;
+  // margin-top: 40px;
 
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
   // border: 1px solid #e6e7eb;
   background-color: #e6e7eb;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 140px;
+
+    width: 0;
+    height: 0;
+
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #e6e7eb;
+  }
+}
+
+.actions__share--open {
+  display: block;
 }
 
 .actions__share-list {
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  width: 250px;
 
   list-style: none;
 }
@@ -236,3 +274,157 @@
     // }
   }
 }
+
+.actions__share-item {
+  position: relative;
+
+  flex-basis: 40px;
+
+  width: 40px;
+  height: 40px;
+  margin-right: 30px;
+  margin-bottom: 12px;
+
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
+
+  &:nth-child(1n+4) {
+    margin-bottom: 0;
+  }
+
+  a {
+    width: 40px;
+    height: 40px;
+  }
+
+
+}
+
+// .actions__share-item--vk {
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+
+//     width: 40px;
+//     height: 40px;
+
+//     background-image: url("../img/vk.png");
+//     background-repeat: no-repeat;
+//     background-position: 0 0;
+//   }
+// }
+
+// .actions__share-item--fb {
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+
+//     width: 40px;
+//     height: 40px;
+
+//     background-image: url("../img/fb.png");
+//     background-repeat: no-repeat;
+//     background-position: 0 0;
+//   }
+// }
+
+// .actions__share-item--tw {
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+
+//     width: 40px;
+//     height: 40px;
+
+//     background-image: url("../img/tw.png");
+//     background-repeat: no-repeat;
+//     background-position: 0 0;
+//   }
+// }
+
+// .actions__share-item--insta {
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+
+//     width: 40px;
+//     height: 40px;
+
+//     background-image: url("../img/insta.png");
+//     background-repeat: no-repeat;
+//     background-position: 0 0;
+//   }
+// }
+
+// .actions__share-item--ok {
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+
+//     width: 40px;
+//     height: 40px;
+
+//     background-image: url("../img/ok.png");
+//     background-repeat: no-repeat;
+//     background-position: 0 0;
+//   }
+// }
+
+// .actions__share-item--mailru {
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+
+//     width: 40px;
+//     height: 40px;
+
+//     background-image: url("../img/mail-ru.png");
+//     background-repeat: no-repeat;
+//     background-position: 0 0;
+//   }
+// }
+
+// .actions__share-item--tele {
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+
+//     width: 40px;
+//     height: 40px;
+
+//     background-image: url("../img/telegram.png");
+//     background-repeat: no-repeat;
+//     background-position: 0 0;
+//   }
+// }
+
+// .actions__share-item--plus {
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+
+//     width: 40px;
+//     height: 40px;
+
+//     background-image: url("../img/share-plus.png");
+//     background-repeat: no-repeat;
+//     background-position: 0 0;
+//   }
+// }
