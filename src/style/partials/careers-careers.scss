@@ -1,5 +1,9 @@
 .careers {
   padding: 70px 0;
+
+  .container {
+    overflow: hidden;
+  }
 }
 
 .careers__wrapper {
@@ -7,13 +11,36 @@
 
   padding: 50px 70px;
 
-  border: 1px solid #e6e7eb;
+  border: 2px solid #e6e7eb;
+
+  // overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: -50px;
+    left: -65px;
+
+    width: 100px;
+    height: 70px;
+
+    border: 2px solid #e6e7eb;
+    background-color: #ffffff;
+
+    transform: rotate(45deg);
+
+  }
 }
 
 .careers__wrapper--closed {
   height: 280px;
 
-  overflow: hidden;
+  // overflow: hidden;
+
+  .careers__open--closed {
+    display: none;
+  }
 }
 
 .careers__title {
@@ -152,4 +179,34 @@ font-weight: 100;
 
     transform: rotate(90deg);
   }
+
+  .open {
+    display: none;
+  }
+
+  &--open {
+    &::after {
+      transform: rotate(-90deg);
+    }
+
+    .open {
+      display: block;
+    }
+
+    .closed {
+      display: none;
+    }
+  }
+
+
 }
+
+// .careers__list--mod {
+
+// }
+
+// .careers__wrapper--closed {
+//   .careers__open--mod {
+
+//   display: none;
+// }

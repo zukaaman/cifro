@@ -1,4 +1,4 @@
-.actions {
+.index-actions {
   padding-top: 100px;
   // padding-bottom: 80px;
 
@@ -9,7 +9,11 @@
   // }
 }
 
-.actions__title {
+.index-actions__img {
+  padding-top: 20px;
+}
+
+.index-actions__title {
   margin: 0;
   // padding-top: 80px;
   padding-bottom: 30px;
@@ -21,7 +25,7 @@
   text-align: center;
 }
 
-.actions__slider {
+.index-actions__slider {
 
   padding: 80px 0;
 
@@ -34,11 +38,11 @@
   }
 }
 
-.actions__description {
+.index-actions__description {
   text-align: center;
 }
 
-.actions__description p:nth-child(1) {
+.index-actions__description p:nth-child(1) {
   margin: 0;
 
   color: #000000;
@@ -49,7 +53,7 @@
   letter-spacing: 3px;
 }
 
-.actions__description p:nth-child(2) {
+.index-actions__description p:nth-child(2) {
   // position: relative;
   // z-index: 1;
 
@@ -57,7 +61,7 @@
   padding: 0 21px;
 
   color: #000000;
-  font-family: Roboto;
+  font-family: $font-roboto;
   font-size: 30px;
   font-weight: 500;
   line-height: 50px;
@@ -87,29 +91,29 @@
   // }
 }
 
-.actions__description p:nth-child(3) {
+.index-actions__description p:nth-child(3) {
   margin: 0;
 
   color: #000000;
-  font-family: Roboto;
+  font-family: $font-roboto;
   font-size: 30px;
   line-height: 60px;
   font-weight: 400;
   letter-spacing: 2.4px;
 }
 
-.actions__description p:nth-child(4) {
+.index-actions__description p:nth-child(4) {
   margin: 0;
 
   color: #fefb07;
-  font-family: Roboto;
+  font-family: $font-roboto;
   font-size: 60px;
   font-weight: 700;
   line-height: 40px;
   text-shadow:  3px 3px #000000;
 }
 
-.actions__slider-left {
+.index-actions__slider-left {
   width: 16px;
   height: 29px;
 
@@ -118,7 +122,7 @@
   background-position: 0 0;
 }
 
-.actions__slider-right {
+.index-actions__slider-right {
   width: 16px;
   height: 29px;
 
@@ -129,25 +133,25 @@
   transform: rotate(180deg);
 }
 
-.actions__link {
+.index-actions__link {
   display: flex;
   justify-content: center;
   padding-top: 30px;
 }
 
-.actions__link a {
+.index-actions__link a {
   // margin: 0 auto;
   margin-right: 20px;
 
   color: #000000;
-  font-family: Roboto;
+  font-family: $font-roboto;
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
   text-decoration: underline;
 }
 
-.actions__link::after {
+.index-actions__link::after {
   content: "";
 
   display: block;

@@ -69,7 +69,7 @@
 .features__title {
   margin: 0;
 
-  font-family: "robotothin", sans-serif;
+  font-family: $font-roboto-thin;
   color: #000000;
   font-size: 20px;
   // font-weight: 500;
@@ -80,7 +80,7 @@
 .features__list p {
   margin: 0;
 
-  font-family: "robotothin", sans-serif;
+  font-family: $font-roboto-thin;
   font-size: 16px;
   line-height: 24px;
   font-weight: 100;
