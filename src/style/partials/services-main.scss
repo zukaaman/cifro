@@ -1,3 +1,7 @@
+.main {
+  padding-top: 65px;
+}
+
 .main__top-text {
   margin: 0;
 
@@ -20,14 +24,18 @@
   display: flex;
   justify-content: space-around;
   margin: 0;
-  padding: 0;
+  padding: 60px 0;
 
   list-style: none;
 }
 
 .main__features-item {
-  flex-basis: 33%;
+  // position: relative;
+
+  flex-basis: 20%;
   height: 170px;
+  padding-left: 50px;
+  padding-top: 45px;
 
   background-image: url("../img/yellow-field.png");
   background-repeat: no-repeat;
@@ -51,35 +59,79 @@
     font-weight: 500;
     letter-spacing: 0.8px;
     line-height: 28px;
-
   }
 }
 
 .main__buttons-list {
+  position: relative;
+
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin: 0;
   padding: 0;
+  margin-bottom: 60px;
   height: 120px;
 
   list-style: none;
 
   background-color: #e6e7eb;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    width: 0;
+    height: 0;
+
+    border-bottom: 70px solid #ffffff;
+    border-left: 70px solid #e6e7eb;
+  }
+
+  label {
+    color: #080607;
+    font-family: $font-roboto;
+    font-size: 30px;
+    font-style: italic;
+    line-height: 30px;
+    font-weight: 400;
+  }
 }
 
-.main__button {
-  color: #080607;
-  font-family: $font-roboto;
-  font-size: 30px;
-  font-style: italic;
-  line-height: 30px;
-  font-weight: 400;
+// .main__button {
+//   color: #080607;
+//   font-family: $font-roboto;
+//   font-size: 30px;
+//   font-style: italic;
+//   line-height: 30px;
+//   font-weight: 400;
+// }
+
+.main__text-wrapper {
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 30px;
 }
 
- .main__aside {
+.main__aside {
+  // display: none;
+  // flex-basis: 40%;
+  align-self: flex-start;
+  margin-right: 70px;
+  padding: 45px 70px 45px 35px;
 
- }
+  border: 2px solid #e6e7eb;
+}
+
+#button-repair:checked ~ .main__aside--repair {
+  display: block;
+}
+
+// .main__aside--repair {
+//   display: block;
+// }
 
 .main__aside-list {
   margin: 0;
@@ -90,9 +142,79 @@
 
 .main__aside-item {
 
-color: #000000;
-font-family: $font-roboto;
-font-size: 16px;
-font-style: italic;
-line-height: 34px;
+  color: #000000;
+  font-family: $font-roboto;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 34px;
+
+  &:first-child {
+
+    color: #000000;
+    font-family: $font-roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 34px;
+
+  }
+}
+
+.main__text-wrapper-inner {
+  flex-basis: 120%;
+
+  h3 {
+    margin: 0;
+    padding-bottom: 30px;
+
+    color: #000000;
+    line-height: 28px;
+    font-family: $font-roboto;
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  p {
+    margin: 0;
+
+    color: #000000;
+    font-family: $font-roboto-thin;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 100;
+  }
+}
+
+.main__button-open {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+
+  background-image: url("../img/button-right.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  transform: rotate(90deg);
+}
+
+.main__button-order-wrapper {
+  padding: 30px 0;
+
+  background-color: #e6e7eb;
+}
+
+.main__button-order {
+  display: block;
+  margin: 0 auto;
+  padding: 20px 25px;
+
+  color: #000000;
+  font-family: $font-roboto;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+
+  border: 2px solid #000000;
 }

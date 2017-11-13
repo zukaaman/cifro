@@ -3,14 +3,16 @@ body {
 
   font-family: $font-roboto;
 
-  box-sizing: border-box;
-
   .body__wrapper {
     margin-left: 310px;
     // width: 100%;
     // max-width: 1300px;
   }
 }
+
+// * {
+//   box-sizing: border-box;
+// }
 
 button {
   padding: 0;
