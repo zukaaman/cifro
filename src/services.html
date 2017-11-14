@@ -50,19 +50,13 @@
 
             <ul class="main__buttons-list">
               <li>
-                <label for="button-repair">
-                  <!-- <button class="main__button"> -->Ремонт<!-- </button> -->
-                </label>
+                <label class="main__buttons-list--repair" for="button-repair">Ремонт</label>
               </li>
               <li>
-                <label for="button-modern">
-                  <!-- <button class="main__button"> -->Модернизация<!-- </button> -->
-                </label>
+                <label class="main__buttons-list--modern" for="button-modern">Модернизация</label>
               </li>
               <li>
-                <label for="button-sale">
-                  <!-- <button class="main__button"> -->Продажа<!-- </button> -->
-                </label>
+                <label class="main__buttons-list--sale" for="button-sale">Продажа</label>
               </li>
             </ul>
 
@@ -71,14 +65,14 @@
 
             <div class="main__text-wrapper">
               <aside class="main__aside">
-                <ul class="main__aside-list  main__aside-list--repair">
+                <ul class="main__aside-list  main__aside-list--repair1">
                   <li class="main__aside-item">Ремонт компьютеров и мобильных устройств:</li>
                   <li class="main__aside-item">компьютеров  </li>
                   <li class="main__aside-item">ноутбуков</li>
                   <li class="main__aside-item">сотовых телефонов</li>
                   <li class="main__aside-item">планшетов</li>
                 </ul>
-                <ul class="main__aside-list  main__aside-list--repair">
+                <ul class="main__aside-list  main__aside-list--repair2">
                   <li class="main__aside-item">Ремонт бытовой техники:</li>
                   <li class="main__aside-item">телевизоров</li>
                   <li class="main__aside-item">холодильников</li>
@@ -114,15 +108,15 @@
           </div>
 
           <div class="main__button-order-wrapper">
-            <button class="main__button-order  main__button-order--repair"><span class="closed">Оставить заявку на ремонт компьютера</span><span class="open">Заявка на ремонт компьютера</span></button>
-            <button class="main__button-order  main__button-order--modern"><span class="closed">Оставить заявку на модернизацию компьютера</span><span class="open">Заявка на модернизацию компьютера</span></button>
-            <button class="main__button-order  main__button-order--sale"><span class="closed">Оставить заявку на покупку компьютера</span><span class="open">Заявка на покупку компьютера</span></button>
+            <button class="main__button-order  main__button-order--closed  main__button-order--repair"><span class="closed">Оставить заявку на ремонт компьютера</span><span class="open">Заявка на ремонт компьютера</span></button>
+            <button class="main__button-order  main__button-order--closed  main__button-order--modern"><span class="closed">Оставить заявку на модернизацию компьютера</span><span class="open">Заявка на модернизацию компьютера</span></button>
+            <button class="main__button-order  main__button-order--closed  main__button-order--sale"><span class="closed">Оставить заявку на покупку компьютера</span><span class="open">Заявка на покупку компьютера</span></button>
           </div>
 
           <div class="container">
-            <form class="main__form" method="post" action="https://echo.htmlacademy.ru">
+            <form class="main__form  main__form--closed" method="post" action="https://echo.htmlacademy.ru">
 
-              <fieldset>
+              <fieldset class="main__form--repair  main__form--modern">
                 <legend class="main__form-legend  main__form-legend--1">Выберите модель Вашего компьютера</legend>
                   <ul class="main__form-list-model">
                     <li>
@@ -130,7 +124,6 @@
                         <input type="radio" name="model" value="hp">
                         <p>hp</p>
                       </label>
-                      <!-- <label class="model-list--hp" for="hp">HP</label> -->
                     </li>
                     <li>
                       <label class="model-list--sony">
@@ -139,157 +132,206 @@
                       </label>
                     </li>
                     <li>
-                      <input type="radio" id="asus" name="model" value="asus">
-                      <label class="model-list--asus" for="asus">ASUS</label>
+                      <label class="model-list--asus">
+                        <input type="radio" name="model" value="asus">
+                        <p>asus</p>
+                      </label>
                     </li>
                     <li>
-                      <input type="radio" id="lenovo" name="model" value="lenovo">
-                      <label class="model-list--lenovo" for="lenovo">LENOVO</label>
+                      <label class="model-list--lenovo">
+                        <input type="radio" name="model" value="lenovo">
+                      <p>LENOVO</p>
+                    </label>
                     </li>
                     <li>
-                      <input type="radio" id="dell" name="model" value="dell">
-                      <label class="model-list--dell" for="dell">DELL</label>
+                      <label class="model-list--dell">
+                        <input type="radio" name="model" value="dell">
+                      <p>DELL</p>
+                    </label>
                     </li>
                     <li>
-                      <input type="radio" id="msi" name="model" value="msi">
-                      <label class="model-list--msi" for="msi">MSI</label>
+                      <label class="model-list--msi">
+                        <input type="radio" name="model" value="msi">
+                      <p>MSI</p>
+                    </label>
                     </li>
                     <li>
-                      <input type="radio" id="samsung" name="model" value="samsung">
-                      <label class="model-list--samsung" for="samsung">SAMSUNG</label>
+                      <label class="model-list--samsung">
+                        <input type="radio" name="model" value="samsung">
+                      <p>SAMSUNG</p>
+                    </label>
                     </li>
                     <li>
-                      <input type="radio" id="toshiba" name="model" value="toshiba">
-                      <label class="model-list--toshiba" for="toshiba">TOSHIBA</label>
+                      <label class="model-list--toshiba">
+                        <input type="radio" name="model" value="toshiba">
+                      <p>TOSHIBA</p>
+                    </label>
                     </li>
                     <li>
-                      <input type="radio" id="acer" name="model" value="acer">
-                      <label class="model-list--acer" for="acer">ACER</label>
+                      <label class="model-list--acer">
+                        <input type="radio" name="model" value="acer">
+                      <p>ACER</p>
+                    </label>
                     </li>
                     <li>
-                      <input type="radio" id="other" name="model" value="other">
-                      <label class="model-list--other" for="other">Другой вариант</label>
+                      <label class="model-list--other">
+                        <input type="radio" name="model" value="other">
+                      <p>Другой вариант</p>
+                    </label>
                     </li>
                   </ul>
-
-
               </fieldset>
 
-              <fieldset>
+              <fieldset class="main__form--repair">
                 <legend class="main__form-legend  main__form-legend--2">Выберите неисправность компьютера</legend>
-
                 <div class="main__form-list-failure-wrapper">
                   <ul>
                     <li>
-                      <input type="checkbox">
-                      <label for="">Не работает беспроводная мышь</label>
+                      <input type="checkbox" id="mouse" name="mouse-dont-work">
+                      <label for="mouse">Не работает беспроводная мышь</label>
                     </li>
                     <li>
-                      <input type="checkbox">
-                      <label for="">Не работает клавиатура</label>
+                      <input type="checkbox" id="keybord" name="keybord-dont-work">
+                      <label for="keybord">Не работает клавиатура</label>
                     </li>
                     <li>
-                      <input type="checkbox">
-                      <label for="">Не работает интернет</label>
+                      <input type="checkbox" id="internet" name="internet-dont-work">
+                      <label for="internet">Не работает интернет</label>
                     </li>
                     <li>
-                      <input type="checkbox">
-                      <label for="">Томозит браузер в Интернет</label>
+                      <input type="checkbox" id="browser" name="browser-dont-work">
+                      <label for="border">Томозит браузер в Интернет</label>
                     </li>
                     <li>
-                      <input type="checkbox">
-                      <label for="">Не работает Интернет</label>
+                      <input type="checkbox" id="internet" name="internet-dont-work">
+                      <label for="internet">Не работает Интернет</label>
                     </li>
                     <li>
-                      <input type="checkbox">
-                      <label for="">Не включается</label>
+                      <input type="checkbox" id="turn-off" name="dont-turn-on">
+                      <label for="turn-off">Не включается</label>
                     </li>
                     <li>
-                      <input type="checkbox">
-                      <label for="">Не видит флешку</label>
+                      <input type="checkbox" id="flash-drive" name="flash-drive-dont-work">
+                      <label for="flash-drive">Не видит флешку</label>
                     </li>
                   </ul>
 
                   <ul>
                     <li>
-                      <input type="checkbox">
-                      <label for="">Не работает беспроводная мышь</label>
+                      <input type="checkbox" id="mouse2" name="mouse2-dont-work">
+                      <label for="mouse2">Не работает беспроводная мышь</label>
                     </li>
                     <li>
-                      <input type="checkbox">
-                      <label for="">Не работает клавиатура</label>
+                      <input type="checkbox" id="keybord2" name="keybord2-dont-work">
+                      <label for="keybord2">Не работает клавиатура</label>
                     </li>
                     <li>
-                      <input type="checkbox">
-                      <label for="">Не работает интернет</label>
+                      <input type="checkbox" id="internet2" name="internet2-dont-work">
+                      <label for="internet2">Не работает интернет</label>
                     </li>
                     <li>
-                      <input type="checkbox">
-                      <label for="">Томозит браузер в Интернет</label>
+                      <input type="checkbox" id="browser2" name="browser2-dont-work">
+                      <label for="border2">Томозит браузер в Интернет</label>
                     </li>
                     <li>
-                      <input type="checkbox">
-                      <label for="">Не работает Интернет</label>
+                      <input type="checkbox" id="internet2" name="internet2-dont-work">
+                      <label for="internet2">Не работает Интернет</label>
                     </li>
                     <li>
-                      <input type="checkbox">
-                      <label for="">Не включается</label>
+                      <input type="checkbox" id="turn-off2" name="2dont-turn-on">
+                      <label for="turn-off2">Не включается</label>
                     </li>
                     <li>
-                      <input type="checkbox">
-                      <label for="">Не видит флешку</label>
+                      <input type="checkbox" id="flash-drive2" name="flash-drive2-dont-work">
+                      <label for="flash-drive2">Не видит флешку</label>
                     </li>
                   </ul>
 
                   <ul>
                     <li>
-                      <input type="checkbox">
-                      <label for="">Не работает беспроводная мышь</label>
+                      <input type="checkbox" id="mouse3" name="mouse3-dont-work">
+                      <label for="mouse3">Не работает беспроводная мышь</label>
                     </li>
                     <li>
-                      <input type="checkbox">
-                      <label for="">Не работает клавиатура</label>
+                      <input type="checkbox" id="keybord3" name="keybord3-dont-work">
+                      <label for="keybord3">Не работает клавиатура</label>
                     </li>
                     <li>
-                      <input type="checkbox">
-                      <label for="">Не работает интернет</label>
+                      <input type="checkbox" id="internet3" name="internet3-dont-work">
+                      <label for="internet3">Не работает интернет</label>
                     </li>
                     <li>
-                      <input type="checkbox">
-                      <label for="">Томозит браузер в Интернет</label>
+                      <input type="checkbox" id="browser3" name="browser3-dont-work">
+                      <label for="border3">Томозит браузер в Интернет</label>
                     </li>
                     <li>
-                      <input type="checkbox">
-                      <label for="">Не работает Интернет</label>
+                      <input type="checkbox" id="internet3" name="internet3-dont-work">
+                      <label for="internet3">Не работает Интернет</label>
                     </li>
                     <li>
-                      <input type="checkbox">
-                      <label for="">Не включается</label>
+                      <input type="checkbox" id="turn-off3" name="3dont-turn-on">
+                      <label for="turn-off3">Не включается</label>
                     </li>
                     <li>
-                      <input type="checkbox">
-                      <label for="">Другой вариант</label>
+                      <input type="checkbox" id="other" name="jther">
+                      <label for="other">Другой вариант</label>
                     </li>
                   </ul>
-
               </fieldset>
 
-              <fieldset>
+              <fieldset class="main__form--modern">
+                <legend class="main__form-legend  main__form-legend--2">Выберите неисправность компьютера</legend>
+                <div class="main__form-list-failure-wrapper">
+                  <ul>
+                    <li>
+                      <input type="checkbox" id="cpu" name="cpu-replace">
+                      <label for="cpu">Заменить процессор</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="graphics-card" name="graphics card-replace">
+                      <label for="graphics-card">Заменить видеокарту</label>
+                    </li>
+                  </ul>
+
+                  <ul>
+                    <li>
+                      <input type="checkbox" id="access-memory" name="access-add">
+                      <label for="access-memory">Добавить оперативную память</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="hdd" name="hdd-replace">
+                      <label for="hdd">Заменить жесткий диск</label>
+                    </li>
+                  </ul>
+
+                  <ul>
+                    <li>
+                      <input type="checkbox" id="hdd-add" name="hdd-add">
+                      <label for="hdd-add">Добавить жесткий диск</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="repair-other" name="repair-other">
+                      <label for="repair-other">Другой вариант</label>
+                    </li>
+                  </ul>
+              </fieldset>
+
+              <fieldset class="main__form--repair  main__form--modern  main__form--sale">
                 <legend class="main__form-legend  main__form-legend--3">Пожалуйста, укажите свои контактные данные</legend>
                 <ul class="main__form-list-contacts">
                   <li>
-                    <label for="">Как Вас зовут?
-                      <input type="text">
+                    <label>Как Вас зовут?
+                      <input type="text" name="name">
                     </label>
                   </li>
                   <li>
-                    <label for="">E-mail*
-                      <input type="email">
+                    <label>E-mail*
+                      <input type="email" name="email" required>
                     </label>
                   </li>
                   <li>
-                    <label for="">Номер телефона*
-                      <input type="tel">
+                    <label>Номер телефона*
+                      <input type="tel" name="tel" required>
                     </label>
                   </li>
                 </ul>
@@ -306,7 +348,7 @@
 
             </form>
 
-            <button class="main__button-close" type="button">Свернуть</button>
+            <button class="main__button-close  main__button-close-closed" type="button">Свернуть</button>
           </div>
 
 
@@ -318,6 +360,8 @@
 
       //= template/footer.html
     </div>
+
+    <script src="js/main.min.js"></script>
 
   </body>
 </html>

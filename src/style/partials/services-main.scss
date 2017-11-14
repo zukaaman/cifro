@@ -104,14 +104,41 @@
   }
 }
 
-// .main__button {
-//   color: #080607;
-//   font-family: $font-roboto;
-//   font-size: 30px;
-//   font-style: italic;
-//   line-height: 30px;
-//   font-weight: 400;
-// }
+#button-repair:checked ~ .container .main__buttons-list--repair {
+  padding: 10px 20px;
+
+  color: #080607;
+  font-family: $font-roboto;
+  font-size: 30px;
+  font-style: normal;
+
+  border: 1px solid #000000;
+  border-bottom: none;
+}
+
+#button-modern:checked ~ .container .main__buttons-list--modern {
+  padding: 10px 20px;
+
+  color: #080607;
+  font-family: $font-roboto;
+  font-size: 30px;
+  font-style: normal;
+
+  border: 1px solid #000000;
+  border-bottom: none;
+}
+
+#button-sale:checked ~ .container .main__buttons-list--sale {
+  padding: 10px 20px;
+
+  color: #080607;
+  font-family: $font-roboto;
+  font-size: 30px;
+  font-style: normal;
+
+  border: 1px solid #000000;
+  border-bottom: none;
+}
 
 .main__text-wrapper {
   display: flex;
@@ -143,7 +170,8 @@
   list-style: none;
 }
 
-#button-repair:checked ~ .container .main__aside-list--repair,
+#button-repair:checked ~ .container .main__aside-list--repair1,
+#button-repair:checked ~ .container .main__aside-list--repair2,
 #button-modern:checked ~ .container .main__aside-list--modern,
 #button-sale:checked ~ .container .main__aside-list--sale {
   display: block;
@@ -166,6 +194,38 @@
     font-weight: 700;
     line-height: 34px;
 
+  }
+}
+
+.main__aside-list--repair1 > .main__aside-item:nth-child(2),
+.main__aside-list--modern > .main__aside-item:nth-child(2),
+.main__aside-list--sale > .main__aside-item:nth-child(2) {
+  position: relative;
+
+  padding: 0 15px;
+
+  display: inline-block;
+  color: #000000;
+  font-family: $font-roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px;
+
+  background-color: #fefb07;
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    bottom: 0;
+    right: 0;
+
+    width: 0;
+    height: 0;
+
+    border-left: 10px solid #fefb07;
+    border-bottom: 10px solid #ffffff;
   }
 }
 
@@ -214,27 +274,30 @@
   display: block;
 }
 
-.main__button-open {
-  display: block;
-  width: 30px;
-  height: 30px;
-  margin: 0 auto;
-  margin-bottom: 30px;
+// .main__button-open {
+//   display: block;
+//   width: 30px;
+//   height: 30px;
+//   margin: 0 auto;
+//   margin-bottom: 30px;
 
-  background-image: url("../img/button-right.png");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+//   background-image: url("../img/button-right.png");
+//   background-repeat: no-repeat;
+//   background-position: 0 0;
 
-  transform: rotate(90deg);
-}
+//   transform: rotate(90deg);
+// }
 
 .main__button-order-wrapper {
   padding: 30px 0;
+  margin-top: 30px;
 
   background-color: #e6e7eb;
 }
 
 .main__button-order {
+  position: relative;
+
   display: none;
   margin: 0 auto;
   padding: 20px 25px;
@@ -247,8 +310,41 @@
 
   border: 2px solid #000000;
 
-  .open {
+  .closed {
     display: none;
+  }
+
+  .open {
+    display: block;
+  }
+
+  &--closed {
+    .open {
+      display: none;
+    }
+
+    .closed {
+      display: block;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -90px;
+    left: 215px;
+
+    // display: block;
+    width: 30px;
+    height: 30px;
+    // margin: 0 auto;
+    // margin-bottom: 30px;
+
+    background-image: url("../img/button-right.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    transform: rotate(90deg);
   }
 }
 
@@ -260,21 +356,25 @@
 
 .main__form {
   padding-top: 60px;
+}
 
-  ul {
-    margin: 0;
-    padding: 0;
-
-    list-style: none;
-  }
+.main__form--closed {
+  display: none;
 }
 
 .main__form fieldset {
   margin: 0;
   padding: 0;
   padding-bottom: 50px;
+  display: none;
 
   border: none;
+}
+
+#button-repair:checked ~ .container .main__form--repair,
+#button-modern:checked ~ .container .main__form--modern,
+#button-sale:checked ~ .container .main__form--sale {
+  display: block;
 }
 
 .main__form-legend {
@@ -341,10 +441,23 @@
   }
 }
 
+#button-sale:checked ~ .container .main__form-legend--3 {
+  padding-left: 0;
+
+  &::before {
+    display: none;
+  }
+}
+
 .main__form-list-model {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  // justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  padding-top: 50px;
+
+  list-style: none;
 
   li {
     flex-basis: 20%;
@@ -354,10 +467,11 @@
       flex-wrap: wrap;
       // align-content: space-around;
       justify-content: center;
+      align-items: center;
 
       p {
         margin: 0;
-        margin-left: 15px;
+        margin-left: 10px;
 
         color: #000000;
         font-family: $font-roboto-thin;
@@ -368,13 +482,15 @@
       }
     }
   }
+
+  li:nth-child(1n+6) {
+    margin-top: 30px;
+  }
 }
 
 .model-list--hp::before {
   content: "";
-  // position: absolute;
-  // top: 0;
-  // left: 0;
+
   display: block;
   width: 91px;
   height: 54px;
@@ -385,21 +501,176 @@
   background-position: center;
 }
 
+.model-list--sony::before {
+  content: "";
+
+  display: block;
+  width: 91px;
+  height: 54px;
+  flex-basis: 100%;
+
+  background-image: url("../img/sony.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.model-list--asus::before {
+  content: "";
+
+  display: block;
+  width: 91px;
+  height: 54px;
+  flex-basis: 100%;
+
+  background-image: url("../img/asus.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.model-list--lenovo::before {
+  content: "";
+
+  display: block;
+  width: 91px;
+  height: 54px;
+  flex-basis: 100%;
+
+  background-image: url("../img/lenovo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.model-list--dell::before {
+  content: "";
+
+  display: block;
+  width: 91px;
+  height: 54px;
+  flex-basis: 100%;
+
+  background-image: url("../img/dell.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.model-list--msi::before {
+  content: "";
+
+  display: block;
+  width: 91px;
+  height: 54px;
+  flex-basis: 100%;
+
+  background-image: url("../img/msi.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.model-list--samsung::before {
+  content: "";
+
+  display: block;
+  width: 91px;
+  height: 54px;
+  flex-basis: 100%;
+
+  background-image: url("../img/samsung.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.model-list--toshiba::before {
+  content: "";
+
+  display: block;
+  width: 91px;
+  height: 54px;
+  flex-basis: 100%;
+
+  background-image: url("../img/toshiba.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.model-list--acer::before {
+  content: "";
+
+  display: block;
+  width: 91px;
+  height: 54px;
+  flex-basis: 100%;
+
+  background-image: url("../img/acer.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.model-list--other::before {
+  content: "";
+
+  display: block;
+  width: 91px;
+  height: 54px;
+  flex-basis: 100%;
+
+  background-image: url("../img/plus.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .main__form-list-failure-wrapper {
   display: flex;
   justify-content: space-between;
 
+  ul {
+    margin: 0;
+    padding: 0;
+    padding-top: 50px;
+
+    list-style: none;
+  }
+
   li {
     flex-basis: 33%;
+    padding-top: 15px;
   }
 }
 
 .main__form-list-contacts {
   display: flex;
   justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  padding-top: 50px;
+
+  list-style: none;
 
   li {
-    flex-basis: 33%;
+    flex-basis: 23%;
+  }
+
+  label {
+    display: flex;
+    flex-direction: column;
+
+    color: #999999;
+    font-family: $font-roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 34px;
+  }
+
+  input {
+    padding: 30px;
+
+    color: #000000;
+    font-family: $font-roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 34px;
+
+    border: none;
+    border-bottom: 1px solid #999999;
   }
 }
 
@@ -494,4 +765,8 @@
 
     transform: rotate(-90deg);
   }
+}
+
+.main__button-close-closed {
+  display: none;
 }
