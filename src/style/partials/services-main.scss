@@ -274,19 +274,19 @@
   display: block;
 }
 
-// .main__button-open {
-//   display: block;
-//   width: 30px;
-//   height: 30px;
-//   margin: 0 auto;
-//   margin-bottom: 30px;
+.main__button-open {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+  margin-bottom: 30px;
 
-//   background-image: url("../img/button-right.png");
-//   background-repeat: no-repeat;
-//   background-position: 0 0;
+  background-image: url("../img/button-right.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 
-//   transform: rotate(90deg);
-// }
+  transform: rotate(90deg);
+}
 
 .main__button-order-wrapper {
   padding: 30px 0;
@@ -328,24 +328,24 @@
     }
   }
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: -90px;
-    left: 215px;
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   top: -90px;
+  //   left: 215px;
 
-    // display: block;
-    width: 30px;
-    height: 30px;
-    // margin: 0 auto;
-    // margin-bottom: 30px;
+  //   // display: block;
+  //   width: 30px;
+  //   height: 30px;
+  //   // margin: 0 auto;
+  //   // margin-bottom: 30px;
 
-    background-image: url("../img/button-right.png");
-    background-repeat: no-repeat;
-    background-position: 0 0;
+  //   background-image: url("../img/button-right.png");
+  //   background-repeat: no-repeat;
+  //   background-position: 0 0;
 
-    transform: rotate(90deg);
-  }
+  //   transform: rotate(90deg);
+  // }
 }
 
 #button-repair:checked ~ .main__button-order-wrapper .main__button-order--repair,
@@ -355,6 +355,8 @@
 }
 
 .main__form {
+  position: relative;
+
   padding-top: 60px;
 }
 
@@ -363,6 +365,8 @@
 }
 
 .main__form fieldset {
+  position: relative;
+
   margin: 0;
   padding: 0;
   padding-bottom: 50px;
@@ -469,22 +473,30 @@
       justify-content: center;
       align-items: center;
 
-      p {
-        margin: 0;
-        margin-left: 10px;
+      // margin: 0;
+      // margin-left: 10px;
 
-        color: #000000;
-        font-family: $font-roboto-thin;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 28px;
-        text-transform: uppercase;
-      }
+      color: #000000;
+      font-family: $font-roboto-thin;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 28px;
+      text-transform: uppercase;
+    }
+
+    input {
+      margin-right: 10px;
     }
   }
 
   li:nth-child(1n+6) {
     margin-top: 30px;
+  }
+
+  li:last-child {
+    label {
+      text-transform: none;
+    }
   }
 }
 
@@ -618,6 +630,236 @@
   background-position: center;
 }
 
+.model-other {
+  position: absolute;
+  top: 250px;
+  right: -65px;
+  z-index: 10;
+
+  // display: none;
+  width: 370px;
+  // height: 280px;
+  padding-top: 20px;
+
+  text-align: center;
+
+  background-color: #e6e7eb;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  &--closed {
+    display: none;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 173px;
+
+    width: 0;
+    height: 0;
+
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #e6e7eb;
+  }
+
+  p {
+    position: relative;
+
+    margin: 0;
+    padding-bottom: 20px;
+
+    color: #000000;
+    font-family: $font-roboto;
+    font-size: 16px;
+    font-weight: 400;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 70px;
+
+      width: 18px;
+      height: 18px;
+
+      background-image: url("../img/pen.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+  }
+
+  textarea {
+    width: 327px;
+    height: 123px;
+    margin: 0 20px;
+  }
+}
+
+.defect-other {
+  position: absolute;
+  bottom: -270px;
+  right: -65px;
+  z-index: 10;
+
+  width: 370px;
+  padding-top: 20px;
+
+  text-align: center;
+
+  background-color: #e6e7eb;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  &--closed {
+    display: none;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 173px;
+
+    width: 0;
+    height: 0;
+
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #e6e7eb;
+  }
+
+  p {
+    position: relative;
+
+    margin: 0;
+    padding-bottom: 20px;
+
+    color: #000000;
+    font-family: $font-roboto;
+    font-size: 16px;
+    font-weight: 400;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 70px;
+
+      width: 18px;
+      height: 18px;
+
+      background-image: url("../img/pen.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+  }
+
+  textarea {
+    width: 327px;
+    height: 123px;
+    margin: 0 20px;
+  }
+}
+
+.defect-modern-other {
+  position: absolute;
+  bottom: -270px;
+  right: -65px;
+  z-index: 10;
+
+  width: 370px;
+  padding-top: 20px;
+
+  text-align: center;
+
+  background-color: #e6e7eb;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  &--closed {
+    display: none;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 173px;
+
+    width: 0;
+    height: 0;
+
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #e6e7eb;
+  }
+
+  p {
+    position: relative;
+
+    margin: 0;
+    padding-bottom: 20px;
+
+    color: #000000;
+    font-family: $font-roboto;
+    font-size: 16px;
+    font-weight: 400;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 45px;
+
+      width: 18px;
+      height: 18px;
+
+      background-image: url("../img/pen.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+  }
+
+  textarea {
+    width: 327px;
+    height: 123px;
+    margin: 0 20px;
+  }
+}
+
+.model-other__button-close,
+.defect-other__button-close,
+.defect-modern-other__button-close,
+.comment-other__button-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+
+  width: 9px;
+  height: 9px;
+
+  background-image: url("../img/cross.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.model-other__button-submit,
+.defect-other__button-submit,
+.defect-modern-other__button-submit,
+.comment-other__button-submit {
+  padding: 10px 45px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  color: #000000;
+  font-family: $font-roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+
+  border: 2px solid #000000;
+}
+
 .main__form-list-failure-wrapper {
   display: flex;
   justify-content: space-between;
@@ -633,6 +875,42 @@
   li {
     flex-basis: 33%;
     padding-top: 15px;
+  }
+}
+
+.defect-other__button {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 10px;
+
+    width: 30px;
+    height: 30px;
+
+    background-image: url("../img/plus.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+
+.defect-modern-other__button {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 10px;
+
+    width: 30px;
+    height: 30px;
+
+    background-image: url("../img/plus.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
   }
 }
 
@@ -764,6 +1042,97 @@
     background-position: 0 0;
 
     transform: rotate(-90deg);
+  }
+}
+
+.main__form-button-comment {
+  position: absolute;
+  top: 50px;
+  right: 150px;
+
+  color: #000000;
+  font-family: $font-roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -7px;
+    right: -40px;
+
+    width: 30px;
+    height: 30px;
+
+    background-image: url("../img/plus.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+
+.comment-other {
+  position: absolute;
+  bottom: -270px;
+  right: -65px;
+  z-index: 10;
+
+  width: 370px;
+  padding-top: 20px;
+
+  text-align: center;
+
+  background-color: #e6e7eb;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  &--closed {
+    display: none;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 173px;
+
+    width: 0;
+    height: 0;
+
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #e6e7eb;
+  }
+
+  p {
+    position: relative;
+
+    margin: 0;
+    padding-bottom: 20px;
+
+    color: #000000;
+    font-family: $font-roboto;
+    font-size: 16px;
+    font-weight: 400;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 70px;
+
+      width: 18px;
+      height: 18px;
+
+      background-image: url("../img/pen.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+  }
+
+  textarea {
+    width: 327px;
+    height: 123px;
+    margin: 0 20px;
   }
 }
 

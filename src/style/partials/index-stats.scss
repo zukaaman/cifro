@@ -1,9 +1,23 @@
 .stats {
-  padding: 70px 0 60px 60px;
+  position: relative;
+
+  padding: 70px 0 60px 0;
   background-color: #222222;
-  background-image: url("../img/index-stats-triangle.png");
-  background-repeat: no-repeat;
-  background-position: 320px 0;
+  // background-image: url("../img/index-stats-triangle.png");
+  // background-repeat: no-repeat;
+  // background-position: 320px 0;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 320px;
+
+    width: 0;
+    height: 0;
+
+    border-bottom: 44px solid transparent;
+    border-left: 44px solid #ffffff;
+  }
 }
 
 .stats__list {

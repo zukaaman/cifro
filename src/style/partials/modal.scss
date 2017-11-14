@@ -1,0 +1,79 @@
+.modal {
+  width: 1033px;
+  height: 406px;
+
+  display: flex;
+
+  background-color: #e6e7eb;
+}
+
+.modal__form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  fieldset {
+    flex-basis: 50%;
+    margin: 0;
+    padding: 0;
+
+    border: none;
+  }
+
+  p {
+    margin: 0;
+    flex-basis: 50%;
+
+    color: #999999;
+    font-family: $font-roboto-thin;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 100;
+  }
+
+  span {
+    font-size: 12px;
+    line-height: 16px;
+    color: #0066cc;
+    font-family: $font-roboto;
+    font-weight: 400;
+  }
+
+  button {
+    flex-basis: 50%;
+    padding: 20px 30px;
+
+    color: #000000;
+    font-family: $font-roboto;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+
+    border: 2px solid #000000;
+  }
+}
+
+.modal__form-contacts {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+
+  input {
+    width: 238px;
+
+    background-color: #e6e7eb;
+    border: none;
+    border-bottom: 1px solid #999999;
+  }
+}
+
+.modal__form-textarea {
+
+  textarea {
+    width: 200px;
+    height: 180px;
+
+    border: 1px solid #999999;
+    background-color: #e6e7eb;
+  }
+}

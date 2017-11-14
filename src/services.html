@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html>
-  <head lang="ru">
+<html lang="ru">
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>УСЛУГИ</title>
@@ -121,65 +121,63 @@
                   <ul class="main__form-list-model">
                     <li>
                       <label class="model-list--hp">
-                        <input type="radio" name="model" value="hp">
-                        <p>hp</p>
+                        <input type="radio" name="model" value="hp">HP
                       </label>
                     </li>
                     <li>
                       <label class="model-list--sony">
-                        <input type="radio" name="model" value="sony">
-                        <p>sony</p>
+                        <input type="radio" name="model" value="sony">sony
                       </label>
                     </li>
                     <li>
                       <label class="model-list--asus">
-                        <input type="radio" name="model" value="asus">
-                        <p>asus</p>
+                        <input type="radio" name="model" value="asus">asus
                       </label>
                     </li>
                     <li>
                       <label class="model-list--lenovo">
-                        <input type="radio" name="model" value="lenovo">
-                      <p>LENOVO</p>
-                    </label>
+                        <input type="radio" name="model" value="lenovo">LENOVO
+                      </label>
                     </li>
                     <li>
                       <label class="model-list--dell">
-                        <input type="radio" name="model" value="dell">
-                      <p>DELL</p>
-                    </label>
+                        <input type="radio" name="model" value="dell">DELL
+                      </label>
                     </li>
                     <li>
                       <label class="model-list--msi">
-                        <input type="radio" name="model" value="msi">
-                      <p>MSI</p>
-                    </label>
+                        <input type="radio" name="model" value="msi">MSI
+                      </label>
                     </li>
                     <li>
                       <label class="model-list--samsung">
-                        <input type="radio" name="model" value="samsung">
-                      <p>SAMSUNG</p>
-                    </label>
+                        <input type="radio" name="model" value="samsung">SAMSUNG
+                      </label>
                     </li>
                     <li>
                       <label class="model-list--toshiba">
-                        <input type="radio" name="model" value="toshiba">
-                      <p>TOSHIBA</p>
-                    </label>
+                        <input type="radio" name="model" value="toshiba">TOSHIBA
+                      </label>
                     </li>
                     <li>
                       <label class="model-list--acer">
-                        <input type="radio" name="model" value="acer">
-                      <p>ACER</p>
-                    </label>
+                        <input type="radio" name="model" value="acer">ACER
+                      </label>
                     </li>
                     <li>
                       <label class="model-list--other">
-                        <input type="radio" name="model" value="other">
-                      <p>Другой вариант</p>
-                    </label>
+                        <input class="model-list--other-input" type="radio" name="model" value="other">Другой вариант
+                      </label>
                     </li>
                   </ul>
+
+                  <div class="model-other  model-other--closed">
+                    <button class="model-other__button-close" type="button"></button>
+                    <p>Напишите название<br> модели Вашего устройства</p>
+                    <textarea name="other-description"></textarea>
+                    <button class="model-other__button-submit" type="submit">Сохранить</button>
+                  </div>
+
               </fieldset>
 
               <fieldset class="main__form--repair">
@@ -203,8 +201,8 @@
                       <label for="border">Томозит браузер в Интернет</label>
                     </li>
                     <li>
-                      <input type="checkbox" id="internet" name="internet-dont-work">
-                      <label for="internet">Не работает Интернет</label>
+                      <input type="checkbox" id="internet2" name="internet2-dont-work">
+                      <label for="internet2">Не работает Интернет</label>
                     </li>
                     <li>
                       <input type="checkbox" id="turn-off" name="dont-turn-on">
@@ -226,16 +224,16 @@
                       <label for="keybord2">Не работает клавиатура</label>
                     </li>
                     <li>
-                      <input type="checkbox" id="internet2" name="internet2-dont-work">
-                      <label for="internet2">Не работает интернет</label>
+                      <input type="checkbox" id="internet1" name="internet1-dont-work">
+                      <label for="internet1">Не работает интернет</label>
                     </li>
                     <li>
                       <input type="checkbox" id="browser2" name="browser2-dont-work">
                       <label for="border2">Томозит браузер в Интернет</label>
                     </li>
                     <li>
-                      <input type="checkbox" id="internet2" name="internet2-dont-work">
-                      <label for="internet2">Не работает Интернет</label>
+                      <input type="checkbox" id="internet3" name="internet3-dont-work">
+                      <label for="internet3">Не работает Интернет</label>
                     </li>
                     <li>
                       <input type="checkbox" id="turn-off2" name="2dont-turn-on">
@@ -257,26 +255,35 @@
                       <label for="keybord3">Не работает клавиатура</label>
                     </li>
                     <li>
-                      <input type="checkbox" id="internet3" name="internet3-dont-work">
-                      <label for="internet3">Не работает интернет</label>
+                      <input type="checkbox" id="internet31" name="internet31-dont-work">
+                      <label for="internet31">Не работает интернет</label>
                     </li>
                     <li>
                       <input type="checkbox" id="browser3" name="browser3-dont-work">
                       <label for="border3">Томозит браузер в Интернет</label>
                     </li>
                     <li>
-                      <input type="checkbox" id="internet3" name="internet3-dont-work">
-                      <label for="internet3">Не работает Интернет</label>
+                      <input type="checkbox" id="internet32" name="internet32-dont-work">
+                      <label for="internet32">Не работает Интернет</label>
                     </li>
                     <li>
                       <input type="checkbox" id="turn-off3" name="3dont-turn-on">
                       <label for="turn-off3">Не включается</label>
                     </li>
                     <li>
-                      <input type="checkbox" id="other" name="jther">
+                      <input class="defect-other-input" type="checkbox" id="other" name="other">
                       <label for="other">Другой вариант</label>
+                      <button class="defect-other__button"></button>
                     </li>
                   </ul>
+
+                  <div class="defect-other  defect-other--closed">
+                    <button class="defect-other__button-close" type="button"></button>
+                    <p>Опишите неисправность<br>Вашего устройства</p>
+                    <textarea name="defect-description"></textarea>
+                    <button class="defect-other__button-submit" type="submit">Сохранить</button>
+                  </div>
+
               </fieldset>
 
               <fieldset class="main__form--modern">
@@ -310,10 +317,19 @@
                       <label for="hdd-add">Добавить жесткий диск</label>
                     </li>
                     <li>
-                      <input type="checkbox" id="repair-other" name="repair-other">
+                      <input class="defect-modern-other-input" type="checkbox" id="repair-other" name="repair-other">
                       <label for="repair-other">Другой вариант</label>
+                      <button class="defect-modern-other__button"></button>
                     </li>
                   </ul>
+
+                  <div class="defect-modern-other  defect-modern-other--closed">
+                    <button class="defect-modern-other__button-close" type="button"></button>
+                    <p>Укажите желаемые улучшения<br> Вашего устройства</p>
+                    <textarea name="defect-modern-description"></textarea>
+                    <button class="defect-modern-other__button-submit" type="submit">Сохранить</button>
+                  </div>
+
               </fieldset>
 
               <fieldset class="main__form--repair  main__form--modern  main__form--sale">
@@ -344,6 +360,14 @@
 
               <div class="main__form-button-wrapper">
                 <button class="main__form-button" type="submit">Отправить заявку</button>
+                <button class="main__form-button-comment" type="button">Добавить комментарий</button>
+              </div>
+
+              <div class="comment-other  comment-other--closed">
+                <button class="comment-other__button-close" type="button"></button>
+                <p>Пожалуйста,<br> добавьте комментарий</p>
+                <textarea name="comment-description"></textarea>
+                <button class="comment-other__button-submit" type="submit">Сохранить</button>
               </div>
 
             </form>

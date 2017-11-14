@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html>
-  <head lang="ru">
+<html lang="ru">
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Компьютерный сервис центр «ЦИФРО»</title>
@@ -23,36 +23,48 @@
             </div>
             <h2 class="index-top__question">У Вас какая-то проблема? Мы ее решим!</h2>
             <div class="index-top__request">
-              <form action="">
+              <form action="" method="post">
                   <fieldset>
                     <legend>Выберите услугу*</legend>
-                    <select name="" id="">
-                      <option value="repairs">ремонт</option>
+                    <select name="service" required>
+                      <option value="repairs">Ремонт</option>
+                      <option value="repairs">Модернизация</option>
+                      <option value="repairs">Поставка</option>
                     </select>
                   </fieldset>
 
                   <fieldset>
                     <legend>Выберите тип устройства*</legend>
-                    <select name="" id="">
-                      <option value="computer">компьютер</option>
+                    <select name="device-type" required>
+                      <option value="computer">Компьютер</option>
+                      <option value="computer">Ноутбук</option>
+                      <option value="computer">Сотовый телефон</option>
+                      <option value="computer">Планшет</option>
                     </select>
                   </fieldset>
 
                   <fieldset>
                     <legend>Выберите модель*</legend>
-                    <select name="" id="">
-                      <option value="asus">asus</option>
+                    <select name="model" required>
+                      <option value="asus">ACER</option>
+                      <option value="asus">ASUS</option>
+                      <option value="asus">DELL</option>
+                      <option value="asus">HP</option>
                     </select>
                   </fieldset>
 
                   <fieldset>
                     <legend>Выберите неисправность*</legend>
-                    <select name="" id="">
+                    <select name="defect" required>
                       <option value="dont-turn-on">Не включается</option>
+                      <option value="dont-turn-on">Не работает беспроводная мышь</option>
+                      <option value="dont-turn-on">Не работает клавиатура</option>
+                      <option value="dont-turn-on">Не работает интернет</option>
+                      <option value="dont-turn-on">Томозит браузер в Интернет</option>
                     </select>
                   </fieldset>
 
-                  <button class="index-top__request-button">Оформить заявку</button>
+                  <button class="index-top__request-button" type="submit">Оформить заявку</button>
               </form>
             </div>
           </div>
@@ -147,7 +159,21 @@
           </div>
         </section>
 
-        <a href=""></a>
+        <section class="modal">
+          <img src="img/modal-img.jpg" width="370" height="406" alt="">
+          <form class="modal__form" action="" method="post">
+            <fieldset class="modal__form-contacts">
+              <input type="text" name="name">
+              <input type="email" name="email" required>
+              <input type="tel" name="tel" required>
+            </fieldset>
+            <fieldset class="modal__form-textarea">
+              <textarea name="textarea"></textarea>
+            </fieldset>
+            <button>Отправить заявку</button>
+            <p>Отправляя завяку, я даю согласие на обработку моих персональных данных согласно <span>политике конфиденциальности</span>.</p>
+          </form>
+        </section>
 
       </main>
 
